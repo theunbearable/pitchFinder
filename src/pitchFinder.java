@@ -52,7 +52,7 @@ public class pitchFinder
                     numerator = 11;
                     break;
                 case "A_":
-                    numerator = 0;
+                    numerator = 12;
                     break;
                 case "A#":
                     numerator = 1;
