@@ -52,7 +52,7 @@ public class pitchFinder
                     numerator = 11;
                     break;
                 case "A_":
-                    numerator = 12;
+                    numerator = 0;
                     break;
                 case "A#":
                     numerator = 1;
@@ -64,7 +64,7 @@ public class pitchFinder
 
             double octaveMultiple = Math.pow(2, Double.parseDouble(noteOctave) - REFERENCE_OCTAVE);
 
-            double frequency = Math.pow(2, numerator / 12) / 2 * REFERENCE * octaveMultiple;
+            double frequency = Math.pow(2, numerator / 12) * REFERENCE * octaveMultiple;
 
             System.out.println("Note frequency is: " + frequency);
         }
